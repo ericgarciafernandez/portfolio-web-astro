@@ -1,29 +1,24 @@
 ---
-import Work from "../icons/Work.astro";
+const { json } = Astro.props;
 ---
 
-<div>
+<div class="mt-12">
   <div class="flex items-center gap-x-2">
-    <span><Work /></span>
+    <img src="/folder-code.svg" alt="icono" />
     <h2 class="text-2xl">Experiencia laboral</h2>
   </div>
   <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-6">
-    <li class="mb-10 ms-4">
-      <div class="absolute w-3 h-3 bg-accent rounded-full mt-1.5 -start-1.5">
-      </div>
-      <time datetime="11/11/2020 - Actualmente" class="text-accent"
-        >Noviembre 2020 - Actualmente</time
-      >
-      <h3 class="text-xl text-primary">
-        Escola Port - Desarrollador FullStack
-      </h3>
-      <p class="mb-4">
-        Desarrollé landing pages y ecommerce a medida para la venta de cursos
-        náuticos. Utilicé tecnologías como HTML, CSS, PHP y JS donde personalicé
-        las plantillas de WooCommerce para un resultado ajustable. Integré el
-        Ecommerce con Salesforce a través de APIs, añadí una pasarela de pago y
-        resolví desafíos técnicos.
-      </p>
-    </li>
+    {
+      json.map((el) => (
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-accent rounded-full mt-1.5 -start-1.5" />
+          <time datetime={el.time} class="text-accent">
+            {el.time}
+          </time>
+          <h3 class="text-xl text-primary">{el.title}</h3>
+          <p class="mb-4">{el.description}</p>
+        </li>
+      ))
+    }
   </ol>
 </div>

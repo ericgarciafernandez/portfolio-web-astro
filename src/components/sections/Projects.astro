@@ -1,80 +1,38 @@
 ---
-import Code from "../icons/Code.astro";
+const { json } = Astro.props;
 ---
 
-<div>
+<div class="mt-12">
   <div class="flex items-center gap-x-2">
-    <span><Code /></span>
+    <img src="/source-code.svg" alt="icono" />
     <h2 class="text-2xl">Proyectos</h2>
   </div>
-  <!-- First component -->
-  <div
-    class="relative mx-auto mt-6 border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]"
-  >
-    <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px]">
-      <img
-        src="/mockup-tienda.webp"
-        class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl"
-        alt=""
-      />
-    </div>
-  </div>
-  <div
-    class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]"
-  >
-    <div
-      class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"
-    >
-    </div>
-  </div>
-  <div class="mt-6">
-    <h3 class="text-xl">Tienda Escola Port - eCommerce</h3>
-    <div class="flex justify-start items-center gap-x-4 my-4">
-      <img src="/php.dark.svg" alt="PHP" class="w-8" />
-      <img src="/jquery_dark.svg" alt="jQuery" class="w-8" />
-      <img src="/bootstrap.svg" alt="Bootstrap" class="w-8" />
-      <img src="/woocommerce.svg" alt="Woocommerce" class="w-8" />
-      <img src="/wordpress.svg" alt="Wordpress" class="w-8" />
-      <img src="/mysql.svg" alt="Mysql" class="w-8" />
-      <img src="/salesforce.svg" alt="Salesforce" class="w-8" />
-    </div>
-    <p>
-      Desarrollé desde cero el eCommerce con la idea de implementarlo al CMS de
-      Salesforce, con la finalidad de automatizar pedidos. Conseguí mostrar a
-      través de API todos sus cursos y fechas que se crean desde Salesforce.
-    </p>
-  </div>
-  <!-- Second component -->
-  <div
-    class="relative mx-auto mt-6 border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]"
-  >
-    <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px]">
-      <img
-        src="/mockup-pokeapi.webp"
-        class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl"
-        alt=""
-      />
-    </div>
-  </div>
-  <div
-    class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]"
-  >
-    <div
-      class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"
-    >
-    </div>
-  </div>
-  <div class="mt-6">
-    <h3 class="text-xl">PokeApi</h3>
-    <div class="flex justify-start items-center gap-x-4 my-4">
-      <img src="/react.svg" alt="Reactjs" class="w-8" />
-      <img src="/nodejs.svg" alt="Nodejs" class="w-8" />
-      <img src="/materialui.svg" alt="Materialui" class="w-8" />
-    </div>
-    <p>
-      Desarrollé desde cero el eCommerce con la idea de implementarlo al CMS de
-      Salesforce, con la finalidad de automatizar pedidos. Conseguí mostrar a
-      través de API todos sus cursos y fechas que se crean desde Salesforce.
-    </p>
-  </div>
+  {
+    json.map((el) => (
+      <>
+        <div class="relative mx-auto mt-6 border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+          <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px]">
+            <img
+              src={el.image}
+              class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl"
+              alt={el.title}
+            />
+          </div>
+        </div>
+        <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+          <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800" />
+        </div>
+        <div class="mt-6">
+          <h3 class="text-xl">{el.title}</h3>
+          <div class="flex justify-start items-center gap-x-4 my-4" />
+          <p>{el.description}</p>
+        </div>
+        <div class="mt-4 flex justify-start items-center gap-x-4">
+          {el.technologies.map((val) => (
+            <img src={val} alt="" />
+          ))}
+        </div>
+      </>
+    ))
+  }
 </div>

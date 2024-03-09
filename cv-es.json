@@ -1,0 +1,87 @@
+{
+    "navbar":{
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "abilities": "Habilidades",
+        "about": "Sobre mí"
+    },
+    "presentation":{
+        "image": "/foto-perfil.webp",
+        "title": "Hola, soy Eric",
+        "subtitle": "Desarrollador Web y Técnico de Sistemas",
+        "experience": "+3 años de experiencia ",
+        "description":"en la construcción de comercios electrónicos y páginas web.",
+        "contact": [
+            {
+                "network": "Correo",
+                "icon": "/mail.svg",
+                "url":"mailto:ericgarciafernandez18@gmail.com"
+            },
+            {
+                "network": "LinkedIn",
+                "icon": "/linkedin.svg",
+                "url":"https://www.linkedin.com/in/eric-garc%C3%ADa-fern%C3%A1ndez/"
+            },
+            {
+                "network": "Github",
+                "icon": "/github.svg",
+                "url":"https://github.com/ericgarciafernandez"
+            }
+        ]
+    },
+    "experience":[
+        {
+            "title": "Escola Port - Desarrollador FullStack",
+            "description": "Desarrollé landing pages y ecommerce a medida para la venta de cursos náuticos. Utilicé tecnologías como HTML, CSS, PHP y JS donde personalicé las plantillas de WooCommerce para un resultado ajustable. Integré el Ecommerce con Salesforce a través de APIs, añadí una pasarela de pago y resolví desafíos técnicos.",
+            "time":"Noviembre 2020 - Actualmente"
+        }
+    ],
+    "projects":[
+        {
+            "title": "Tienda Escola Port - eCommerce",
+            "description": "Desarrollé desde cero el eCommerce con la idea de implementarlo al CMS de Salesforce, con la finalidad de automatizar pedidos. Conseguí mostrar a través de API todos sus cursos y fechas que se crean desde Salesforce.",
+            "image": "/mockup-tienda.webp",
+            "technologies": [
+                "/php.svg",
+                "/javascript.svg",
+                "/bootstrap.svg",
+                "/wordpress.svg",
+                "/mysql.svg"
+            ]
+        },
+        {
+            "title": "PokeApi",
+            "description": "Desarrollé una pokedex con el fin de aprender a conectar el backend con el frontend. Lista todos los pokemons, filtra por tipos y añadí un buscador para poder entrar y ver detalladamente cada pokemon.",
+            "image": "/mockup-pokeapi.webp",
+            "technologies": [
+                "/react.svg",
+                "/nodejs.svg"
+            ]
+        }
+    ],
+    "about": {
+        "description":"Entusiasta de la programación desde hace 3 años. Me encanta aprender nuevas tecnologías y me considero constante en mi trabajo. Cuando no estoy sumergido en el código, estoy haciendo deporte, socializando y cuidando mi salud mental. En resumen, soy un dev apasionado con un toque equilibrado y relajado",
+        "school": [
+            {
+                "icon": "/school.svg",
+                "title": "CFGS - Desarrollo de Aplicaciones Web"
+            },
+            {
+                "icon": "/school.svg",
+                "title": "CFGS - Sistemas Informáticos en Redes"
+            }
+        ]
+    },
+    "abilities":[
+        "/html.svg",
+        "/css.svg",
+        "/javascript.svg",
+        "/php.svg",
+        "/bootstrap.svg",
+        "/wordpress.svg",
+        "/mysql.svg",
+        "/react.svg",
+        "/nodejs.svg",
+        "/tailwind.svg"
+    ]
+}

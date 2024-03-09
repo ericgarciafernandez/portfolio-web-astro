@@ -1,52 +1,14 @@
 ---
-import Skills from "../icons/Skills.astro";
+const { json } = Astro.props;
 ---
 
-<div>
+<div class="mt-12">
   <div class="flex items-center gap-x-2">
-    <span><Skills /></span>
+    <img src="/code.svg" alt="" />
     <h2 class="text-2xl">Habilidades</h2>
   </div>
 
   <div class="flex flex-wrap justify-start items-center mt-6 gap-8">
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/html5.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/css.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/php.dark.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/jquery_dark.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/bootstrap.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/mysql.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/wordpress.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/salesforce.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/react.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/nodejs.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/materialui.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/astro_dark.svg" alt="PHP" />
-    </div>
-    <div>
-      <img class="h-auto w-12 rounded-lg" src="/tailwindcss.svg" alt="PHP" />
-    </div>
+    {json.map((el) => <img src={el} alt="" />)}
   </div>
 </div>

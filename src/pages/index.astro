@@ -7,25 +7,26 @@ import Experience from "../components/sections/Experience.astro";
 import Projects from "../components/sections/Projects.astro";
 import Abilities from "../components/sections/Abilities.astro";
 import About from "../components/sections/About.astro";
+import Info from "../../cv-es.json";
 ---
 
-<Layout title="Welcome to Astro.">
-  <Navbar />
+<Layout title="Portfolio de Eric García">
+  <Navbar json={Info.navbar} />
   <main class="mx-auto">
     <Section id="presentation">
-      <Presentation />
+      <Presentation json={Info.presentation} />
     </Section>
     <Section id="experiencia">
-      <Experience />
+      <Experience json={Info.experience} />
     </Section>
     <Section id="proyectos">
-      <Projects />
+      <Projects json={Info.projects} />
     </Section>
     <Section id="sobreMi">
-      <About />
+      <About json={Info.about} />
     </Section>
     <Section id="habilidades">
-      <Abilities />
+      <Abilities json={Info.abilities} />
     </Section>
   </main>
 </Layout>
