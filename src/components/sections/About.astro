@@ -10,12 +10,15 @@ const { json } = Astro.props;
   <p class="mt-6">
     {json.description}
   </p>
-  {
-    json.school.map((el) => (
-      <p class="inline-flex gap-x-2 mt-6">
-        <img src={el.icon} alt="icono" />
-        <span>{el.title}</span>
-      </p>
-    ))
-  }
+  <h3 class="text-lg mt-6">Estudios</h3>
+  <div class="lg:flex lg:flex-wrap">
+    {
+      json.school.map((el) => (
+        <p class="flex gap-x-2 mt-6 lg:w-full">
+          <img src={el.icon} alt="icono" />
+          <span>{el.title}</span>
+        </p>
+      ))
+    }
+  </div>
 </div>

@@ -41,21 +41,25 @@
             "title": "Tienda Escola Port - eCommerce",
             "description": "Desarrollé desde cero el eCommerce con la idea de implementarlo al CMS de Salesforce, con la finalidad de automatizar pedidos. Conseguí mostrar a través de API todos sus cursos y fechas que se crean desde Salesforce.",
             "image": "/mockup-tienda.webp",
+            "url": "http://tienda.escolaport.com/",
             "technologies": [
                 "/php.svg",
                 "/javascript.svg",
                 "/bootstrap.svg",
                 "/wordpress.svg",
-                "/mysql.svg"
+                "/mysql.svg",
+                "/salesforce.svg"
             ]
         },
         {
             "title": "PokeApi",
             "description": "Desarrollé una pokedex con el fin de aprender a conectar el backend con el frontend. Lista todos los pokemons, filtra por tipos y añadí un buscador para poder entrar y ver detalladamente cada pokemon.",
             "image": "/mockup-pokeapi.webp",
+            "url": "https://pokemon-react-eric-garcia.vercel.app/",
             "technologies": [
                 "/react.svg",
-                "/nodejs.svg"
+                "/nodejs.svg",
+                "/materialui.svg"
             ]
         }
     ],
@@ -79,9 +83,11 @@
         "/php.svg",
         "/bootstrap.svg",
         "/wordpress.svg",
+        "/salesforce.svg",
         "/mysql.svg",
         "/react.svg",
         "/nodejs.svg",
-        "/tailwind.svg"
+        "/tailwind.svg",
+        "/astro.svg"
     ]
 }

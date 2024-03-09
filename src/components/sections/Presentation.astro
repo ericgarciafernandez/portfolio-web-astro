@@ -3,9 +3,13 @@ const { json } = Astro.props;
 ---
 
 <div class="mt-12">
-  <div class="flex flex-row flex-wrap items-center gap-x-4">
-    <img src={json.image} alt="Foto de perfil" class="w-24 rounded-lg" />
-    <h2 class="text-3xl w-2/3">
+  <div class="flex flex-row flex-wrap lg:justify-between items-center gap-x-4">
+    <img
+      src={json.image}
+      alt="Foto de perfil"
+      class="w-24 lg:w-48 rounded-lg"
+    />
+    <h2 class="text-3xl w-2/3 lg:flex lg:flex-wrap">
       {json.title}
       <span class="text-xl text-primary">{json.subtitle}</span>
     </h2>
@@ -18,11 +22,7 @@ const { json } = Astro.props;
   <div class="mt-6 flex gap-x-4">
     {
       json.contact.map((el) => (
-        <a
-          href={el.url}
-          target="_blank"
-          class="hover:border-2 border-accent rounded-lg"
-        >
+        <a href={el.url} target="_blank">
           <img src={el.icon} alt="" />
         </a>
       ))
