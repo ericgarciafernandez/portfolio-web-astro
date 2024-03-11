@@ -10,10 +10,10 @@ const { json } = Astro.props;
   {
     json.map((el) => (
       <a href={el.url} target="_blank">
-        <div class="mt-6 flex flex-wrap lg:flex-nowrap">
+        <div class="mt-6 flex flex-wrap xl:flex-nowrap">
           <img
             src={el.image}
-            class="w-full rounded-xl lg:w-1/2"
+            class="w-full rounded-xl xl:w-1/2 md:mb-6"
             alt={el.title}
           />
           <div class="lg:ml-6">
