@@ -51,6 +51,18 @@
                 "/salesforce.svg"
             ]
         },
+                {
+            "title": "React Commerce",
+            "description": "Este proyecto tiene como objetivo perfeccionar mis habilidades con la librería Express.js, conectándolo al front-end con React. Los datos del carrito se almacenan utilizando la librería Zustand. Además, he integrado la pasarela de pago Stripe para permitir la realización de pedidos.",
+            "image": "/mockup-plantCommerce.webp",
+            "url": "https://ecommerce-api-react.vercel.app/",
+            "technologies": [
+                "/react.svg",
+                "/nodejs.svg",
+                "/tailwind.svg",
+                "/brand-stripe.svg"
+            ]
+        },
         {
             "title": "PokeApi",
             "description": "Desarrollé una pokedex con el fin de aprender a conectar el backend con el frontend. Lista todos los pokemons, filtra por tipos y añadí un buscador para poder entrar y ver detalladamente cada pokemon.",
