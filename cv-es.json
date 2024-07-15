@@ -31,9 +31,14 @@
     },
     "experience":[
         {
+            "title": "Fiatc Seguros - Desarrollador FullStack",
+            "description": "Trabajo como programador en una empresa de seguros, donde creo aplicaciones web usando Java en el backend y JavaScript en el frontend. Utilizo la arquitectura Modelo-Vista-Controlador (MVC) para estructurar las aplicaciones, implemento servicios y APIs, y gestiono bases de datos con SQL para asegurar que los datos de la empresa se manejen de manera eficiente y segura.",
+            "time":"Julio 2024 - Actualmente"
+        },
+        {
             "title": "Escola Port - Desarrollador FullStack",
             "description": "Desarrollé landing pages y ecommerce a medida para la venta de cursos náuticos. Utilicé tecnologías como HTML, CSS, PHP y JS donde personalicé las plantillas de WooCommerce para un resultado ajustable. Integré el Ecommerce con Salesforce a través de APIs, añadí una pasarela de pago y resolví desafíos técnicos.",
-            "time":"Noviembre 2020 - Actualmente"
+            "time":"Noviembre 2020 - Junio 2024"
         }
     ],
     "projects":[
